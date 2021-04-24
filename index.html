@@ -19,7 +19,60 @@
             <div id="graph2"></div><br/>
         </div>
         <div class="col-lg-6">
-            <div id="graph3"></div>
+            <div id="graph3"></div><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+            <br/><br/><br/><br/><br/><br/><br/>
+            <p>Your boss wants to know the top 10 video games of all time or top 10 for a specific year.
+              Answer: The first graph provides a dropdown button that gives all provided years in the
+              excel sheet. The boss can select All, which will show the top 10 video games of all time
+              based on Global Sales, or the top 10, or top games if there aren't 10 for that year, for
+              the chosen year.</p>
+
+            <p>Your boss wants to understand which genre is most popular. We'd like to see genre sales broken out per region.
+              (This question can be answered by showing the top genre in each region if you want to implement a map, otherwise
+              you should show genre sales broken down by region in bar/scatter/line/pie etc.)
+              Here, we use a tree map which visually displays the relative sizes of the sales per genre, for the top 5 genres,
+              in the four regions: US, Europe, Japan, and Other. I have included a tool tip that shows the total global sales value
+              for each genre. It should be visually clear and also with the numbers, which genre is the most popular per region.
+            </p>
+            <p>
+              Lastly, your boss wants to know which publisher to pick based on which genre a game is.
+              Your chart should provide a clear top publisher for each genre (could be interactive or statically show).
+              Here, I use a bar chart to show the the total global sales for the top publisher in their genre, with
+              then name being displayed for the top publisher next to the bar chart, and the genre on the y axis,
+              and the global sales value on the bottom.
+            </p>
+            <p>
+              2. D3 is a useful library for making the data flow from data parsing to inputting it into a graph type
+              a very simple process. It has a lot of built-in types of graphs that don't have to be coded from scratch.
+              In terms of practicality and utility, d3 is very well documented and commonly used, so examples are readily
+              available and easy to comprehend and learn from.
+            </p>
+            <p>
+              3. Because data is so complex, it can be limiting to try to fit data into the necessary form that is required for
+              the default d3 built-in graphs. In some contexts, it is better to just build a graph from scratch. d3 is also
+              complex and very robust in terms of how many options there are, so in that sense, it can be overwhelming for
+              both the person writing the code and for the user, who can be overwhelmed with over-specified graph features.
+              Visualization without standard graphs, and using something more expressive can be a reason to not use d3.
+            </p>
+            <p>
+              4. My tree map is perhaps more helpful for the visually impaired in terms of just looking at opacity and seeing
+              size as a comparison of amount of sales. I also use white space in between to make the rectangles distinct.
+              Bar graphs also utilize distinct size. However, my graphs use a lot of small text, and while I do have some
+              tool tips for the tree map, the others are limited in this aspect. Color may also be an issue for the color blind,
+              and the bar and tree maps are not necessary the most intuitive to be read back for someone who is fully blind.
+              I could make sharper outlines in my graphs and sharper colors as opacity may be helpful for some, but not for
+              those with protanopia, who may not be able to as clearly differentiate, as described by Accessible Data
+              Visualization.
+            </p>
+            <p>
+              5. It can be difficult to accommodate all aspects of visual aid, for example with the use of opacity for
+              tree maps, because for general visual purposes, it can be a good indicator of the value and can be used
+              as another visual aid if rectangle sizes aren't clear enough. Just using bar graphs for the other two may
+              not be the best, particularly for answering the last question, because it can be helpful for the people who
+              are blind to just having clear, readable text for the publisher for each genre, but I personally wasn't sure
+              whether that would be too limiting as a display of information, and the bar graph can also show a comparison
+              between genres besides just the top publisher.
+            </p>
         </div>
     </div>
     <!--Feel free to add more JavaScript files as needed-->
